@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="surveyform.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Survey Form</h2>
+      <form class="form-content" id="surveyForm" action="#" method="post">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="first-name" required />
+
+        <label for="last-name">Last Name:</label>
+        <input type="text" id="last-name" name="last-name" required />
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob" required />
+
+        <label for="country">Country:</label>
+        <select id="country" name="country" required>
+          <option value="">Select Country</option>
+          <option value="Country 1">India</option>
+          <option value="Country 2">America</option>
+          <option value="Country 3">Aoustrelia</option>
+          <option value="Country 3">South Africa</option>
+          <option value="Country 3">Koria</option>
+          <option value="Country 3">Japan</option>
+
+          <!-- Add more countries as needed -->
+        </select>
+
+        <label class="checkbox">Gender:</label>
+        <div class="checkbox">
+          <div class="checkboxes-male">
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="male"
+              name="gender"
+              value="Male"
+            />
+          </div>
+
+          <label for="male">Male</label>
+
+          <div class="checkboxes-female">
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="female"
+              name="gender"
+              value="Female"
+            />
+          </div>
+
+          <label for="female">Female</label>
+
+          <div class="checkboxes-other">
+            <input
+              class="checkbox"
+              type="checkbox"
+              id="other"
+              name="gender"
+              value="other"
+            />
+          </div>
+
+          <label for="other">Other</label>
+        </div>
+
+        <!-- <label for="non-binary">Non-Binary</label>
+            <input type="checkbox" id="non-binary" name="gender" value="Non-Binary">
+             -->
+        <!-- <label for="prefer-not-say">Prefer not to say</label>
+            <input type="checkbox" id="prefer-not-say" name="gender" value="Prefer not to say">
+            -->
+        <label for="profession">Profession:</label>
+        <input type="text" id="profession" name="profession" />
+
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" required />
+
+        <label for="mobile">Mobile Number:</label>
+        <input type="text" id="mobile" name="mobile" required />
+
+        <div class="button-container">
+          <input
+            type="submit"
+            id="submitBtn"
+            class="submit-btn"
+            value="Submit"
+          />
+          <button class="resset-btn">Reset</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- modal-content -->
+    <div id="modalContent" class="modal-content" style="display: none">
+      <div id="formData">
+        <!-- <span id="close">&times;</span> -->
+        <!-- <h2 id="heading">Form Data</h2> -->
+      </div>
+    </div>
+
+    <script src="surveyform.js"></script>
+  </body>
+</html>
